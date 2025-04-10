@@ -8,7 +8,7 @@ name = "addition"
 crate-type = ["staticlib"]
 
 [dependencies]
-mlua = { version = "0.10", features = ["lua53", "module"] }
+mlua = { git = 'https://github.com/AO-ZKP/mlua', branch = 'no-std-module', features = ["lua53", "module"], default-features = false }
 
 [profile.dev]
 panic = "abort"
